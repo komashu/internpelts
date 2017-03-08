@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% block title %}{% endblock%}</title>
+      <link type="text/css" rel="stylesheet" href="{% static '/blog/blog.css' %}">
+
+  </head>
+  <body>
+  <div id="thebox">
+    <div id="logo"><strong>&#123;&#123; </strong>internpelts<strong> &#125;&#125;</strong></div>
+  <div id="nav">
+  <li>
+    <li><a href="/">HOME</a></li>
+	<li><a href="/#">ABOUT</a></li>
+	<li><a href="/#">PROJECTS</a></li>
+	<li><a href="/blog">BLOG</a></li>
+	<li><a href="#">CONTACT</a></li>
+  </div>
+  <div id="content">
+
+{% block content %}
+
+{% endblock content %}
+  </div>
+  </div>
+<br /><br />
+<div id="foot"><a href="http://validator.w3.org/check?uri=referer" target="_blank">Valid
+  XHTML</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer" target="_blank">Valid
+  CSS</a> | Copyright &#9426; internpelts.com | Design by <a href="http://internpelts.com">Mr. Disco</a></div>
+</body></html>

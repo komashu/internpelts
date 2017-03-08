@@ -1,0 +1,209 @@
+/**************************************************************************
+Background colour, fonts, margins, all are done here
+**************************************************************************/
+body {
+	font-family: Helvetica, Verdana, Arial, sans-serif;
+	font-size: 11px;
+	background-color: #FFFFFF;
+}
+
+/**************************************************************************
+All the goodness of links
+**************************************************************************/
+a:link, a:visited, a:active {
+	color: #ff090a;
+	text-decoration: none;
+}
+
+/**************************************************************************
+Need I comment?
+**************************************************************************/
+a:hover {
+	text-decoration: underline;
+	color: #ff090a;
+}
+
+
+/**************************************************************************
+This is the giant white box that holds everything together
+**************************************************************************/
+#thebox {
+	width: 75%;
+	background-color: white;
+	color: #666;
+	border: 1px #cccccc solid;
+	margin: 50px auto 0px auto;
+	padding: 0px 20px 0 20px
+}
+
+/**************************************************************************
+This was the best way I thought they orange square logo thingy could be
+displayed. The logo coding looks really messy and rather horrible. I'm sure
+there are better ways of doing this. Please drop me a line if you know how.
+**************************************************************************/
+#logo {
+	text-align: center;
+	width: 145px;
+	margin: 0px 5px 30px -10px;
+	padding: 30px 10px 5px 10px;
+	background-color: #ff090a;
+	color: #FFFFFF;
+	font-family: Calibri, sans-serif;
+	font-weight: normal;
+	font-size: 20px;
+	letter-spacing: 1px;
+	/*text-transform: uppercase;*/
+}
+
+/**************************************************************************
+Navigation bar, lists, and links - Uses Gill Sans for the good ol' Mac.
+I'm using different linking styles for the navigation bar. Also, <li> tags
+are used.
+**************************************************************************/
+#nav {
+	width: 455px;
+	margin: -50px 0px 50px 	250px;
+	padding: 0px 0px 0px 0px;
+	color: #999;
+	font-family: Calibri, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+}
+
+#nav li {
+	list-style: none;
+	display: inline;
+	margin-right: 20px;
+}
+
+#nav a {
+	font-size: 15px;
+	font-weight: bold;
+	color: #999;
+	text-decoration: none;
+}
+
+#nav a:hover {
+	color: #ff090a;
+	text-decoration: none;
+}
+
+/**************************************************************************
+The content - full of goodness and textaulity, hehe.
+**************************************************************************/
+#content {
+	color: #666;
+	font-family: Helvetica, Verdana, sans-serif;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 10px 10px 10px;
+}
+
+/**************************************************************************
+Header #1 - This header displays the topic name of text
+**************************************************************************/
+#content h1 {
+
+font-size: 12px;
+
+}
+
+#content h1 a:link, a:visited, a:active {
+	color: #ff090a;
+	font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+
+	font-weight: normal;
+}
+
+#content h1 a:hover {
+	text-decoration: underline;
+	font-family: 'Gill Sans', Verdana, Helvetica, sans-serif;
+	color: #ff090a;
+}
+
+/**************************************************************************
+Header #2 - This header displays the date
+**************************************************************************/
+
+#content h2 {
+font-size: 10px;
+letter-spacing: 3px;
+text-transform: uppercase;
+}
+
+#foot {
+
+text-align: center;
+color: #696969;
+}
+
+table {
+	text-align: left;
+}
+
+#control-bar {
+    list-style: none;
+    font-weight: bold;
+
+    float: left; /* Clear floats */
+    width: 100%;
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    /* Bring the nav above everything else--uncomment if needed.
+    position: relative;
+    z-index: 5;*/
+}
+
+#control-bar li {
+    float: left;
+    margin-right: 1px;
+
+}
+
+#control-bar a {
+    display: block;
+    padding: 1px;
+    color: #ff090a;
+    background-color: #fff;
+    text-decoration: none;
+}
+#control-bar a:hover {
+    color: #fff;
+    background-color: #fff;
+    text-decoration: underline;
+}
+
+#control-bar ul {
+    background-color: #fff;
+    background: rgba(255,255,255,0);
+    list-style: none;
+    position: absolute;
+    left: -9999px;
+}
+
+#control-bar ul li {
+    padding-top: 1px;
+    float: none;
+}
+
+#control-bar ul a {
+    white-space: nowrap;
+}
+
+#control-bar li:hover ul {
+    left: 0;
+}
+
+#control-bar li:hover a { /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+    background-color: #ff090a;
+    color: #fff;
+    text-decoration: underline;
+}
+
+#control-bar li:hover ul a { /* The persistent hover state does however create a global style for links even before they're hovered. Here we undo these effects. */
+    text-decoration: none;
+}
+
+#control-bar li:hover ul li a:hover { /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+    background-color: #333;
+}
