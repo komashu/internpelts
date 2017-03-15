@@ -7,6 +7,7 @@ class CategorizedInline(admin.TabularInline):
 
 class CategoryAdmin(admin.ModelAdmin):
     exclude = ('posts',)
+    #meta =
 
 
 class PostAdmin(admin.ModelAdmin):

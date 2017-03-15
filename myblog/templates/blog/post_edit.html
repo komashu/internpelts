@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+     {% include 'blog/auth.html' %}
+<a class="backlink" href="/blog">Home</a>
+
+     <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+
+{% endblock %}
