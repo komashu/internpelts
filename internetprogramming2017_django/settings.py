@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.10/ref/settings/
 
 import os
 import dj_database_url
-from secret_settings import *
+from internetprogramming2017_django.secret_settings import *
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
