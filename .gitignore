@@ -95,8 +95,6 @@ ENV/
 .idea/
 db.sqlite3
 manage.py
-
-
 secret_settings.py
 
 
